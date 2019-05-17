@@ -1,0 +1,65 @@
+clase principal{
+  main(){
+ 
+          int tamano = 10;            
+          int array matrix[tamano] = {100,3,20,101,33,44,99,66,0,1};
+          int i, j = 0;
+          int temp;
+
+          >> Ordenamiento por metodo Burbuja
+          print("Ordenamiento por metodo Burbuja");
+          for( i=1; i < tamano;i++)
+          {
+               for ( j=0 ; j < tamano-1; j++)
+               {
+                    if (matrix[j] > matrix[j+1])
+                    {
+                         temp = matrix[j];
+                         matrix[j] = matrix[j+1];
+                         matrix[j+1] = temp;
+                    }
+               }
+          }        
+          for(i  = 0; i < tamano ; i++)
+          {
+               print(matrix[i]);
+          }                        
+
+          >> Ordenamiento por método de selección
+          print("");
+          print("");
+          print("Ordenamiento por método de selección");
+          
+          int array matrix3[tamano] = {100,3,20,101,33,44,99,5,111,9};     
+          int k, p, buffer, limit = tamano-1;     
+          for(k = 0; k < limit; k++)
+          {
+               p = k;
+               for(i = k+1; i <= limit; i++)
+               {
+                    if(matrix3[i] < matrix3[p]) 
+                    {
+                         p = i;
+                    }
+                    if(p != k)
+                    {
+                         buffer = matrix3[p];
+                         matrix3[p] = matrix3[k];
+                         matrix3[k] = buffer;
+                    }
+               }
+          }     
+          for(int x = 0; x < 10 ; x++)
+          {
+               print(matrix3[x]);
+          } 
+
+
+
+
+             
+
+     }
+
+  
+}

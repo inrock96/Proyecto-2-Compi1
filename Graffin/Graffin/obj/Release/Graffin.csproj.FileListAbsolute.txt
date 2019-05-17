@@ -1,0 +1,15 @@
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\bin\Release\Graffin.exe.config
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\bin\Release\Graffin.exe
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\bin\Release\Graffin.pdb
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\bin\Release\Irony.dll
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\bin\Release\Irony.Interpreter.dll
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\obj\Release\Graffin.csprojResolveAssemblyReference.cache
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\obj\Release\Interop.WINGRAPHVIZLib.dll
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\obj\Release\Graffin.csproj.ResolveComReference.cache
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\obj\Release\Graffin.Ventana.resources
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\obj\Release\Graffin.Properties.Resources.resources
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\obj\Release\Graffin.csproj.GenerateResource.Cache
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\obj\Release\Graffin.csproj.CoreCompileInputs.cache
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\obj\Release\Graffin.exe
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\obj\Release\Graffin.pdb
+C:\Users\inti_\Dropbox\compi 1\Graffin\Graffin\obj\Release\Graffin.Graff.resources

@@ -1,0 +1,162 @@
+clase principal{
+
+   main(){
+
+           int numero = 10;
+          double resultado = 0.0;
+          double x = 0.0;
+          int numeroIteraciones=100;
+          double factorial = 1.0;        
+          int i, j = 0;          
+          int contador = 0;  
+          String array mensajes[8] =  {"e^x(", "ln(1+","ln(", "sin(", "cos(", "arctan(","sinh(","cosh("};    
+          double array parametros[10] = {0.50,0.50,1.5,2.0,2.0,0.2,0.2,0.2,2.0,3.0};
+                    for(contador = 0 ; contador<10; contador++)
+          {
+               if(contador == 1)
+               {
+                    <-  Calculo de e^x ->
+                    <-  Primero calculamos el factorial->
+                    resultado = 0;  
+                    x = parametros[contador -1 ];    
+                    for(i = 0 ; i < numeroIteraciones; i++)        >>fila 23
+                    {    
+                         factorial = 1;
+                         repeat(i-1)       >>fila 27
+                         {                               
+                              factorial = factorial * (j+1);
+                         }
+                         >>print(i +"! = " + factorial);
+                         resultado = resultado +  (x ^ i);    >> factorial;                        
+                    }     
+                    print(contador +"--" + mensajes[contador-1]+x+") = " + resultado); 
+                    show("Operacion # " + contador , contador +"--" + mensajes[contador-1]+x+") = " + resultado );            
+               }
+               else
+               if(contador ==2 )
+               {
+                    <-  2. Ln(1+x) 
+                    for |x|<1
+                    ->
+                    x = parametros[contador -1 ];
+                    resultado = 0; >> Limpiamos el resultado
+                    for(i = 1 ;i < numeroIteraciones; i++)
+                    {    
+                         resultado = resultado +  (((-1) ^ (i+1))/i)*((x^i));            
+                    } 
+                    print(contador +"--" + mensajes[contador-1]+x+") = " + resultado); 
+                    show("Operacion # " + contador , contador +"--" + mensajes[contador-1]+x+") = " + resultado );                 
+               }
+               else
+               if(contador == 3)
+               {
+                    <-  3. Ln(x)         
+                    ->
+                    x = parametros[contador -1 ];
+                    resultado = 0; >> Limpiamos el resultado
+                    for(i = 0 ;i < numeroIteraciones; i++)
+                    {                
+                         resultado = resultado +   (1/(2*i+1))  * (((x-1)/(x+1)) ^ (2*i +1));
+                    }             
+                    resultado = resultado + resultado;
+                    print(contador +"--" + mensajes[contador-1]+x+") = " + resultado); 
+                    show("Operacion # " + contador , contador +"--" + mensajes[contador-1]+x+") = " + resultado );                
+               }
+               else
+               if(contador ==4) 
+               {
+                    <-  4. Sin(x)
+                    ->
+                    x = parametros[contador -1 ];
+                    resultado = 0; >> Limpiamos el resultado       
+                    for(i = 0 ;i < numeroIteraciones; i++)
+                    {                                
+                         factorial = 1;
+                         repeat(2*i +1)    >>fila 76
+                         {
+                              factorial = factorial * (j+1);
+                         }                             
+                         resultado = resultado +    ((((-1)^ i)) /(factorial)) *((x ^ (2*i+1))) ;            
+                    }         
+                    print(contador +"--" + mensajes[contador-1]+x+") = " + resultado);
+                    show("Operacion # " + contador , contador +"--" + mensajes[contador-1]+x+") = " + resultado );                           
+               }
+               else
+               if(contador ==5)
+               {
+                    <-  5. cos(x)
+                    ->
+                    x = parametros[contador -1 ];
+                    resultado = 0; >> Limpiamos el resultado        
+                    for(i = 0 ;i < numeroIteraciones; i++)
+                    {                
+                         factorial = 1;
+                         repeat(2*i)
+                         {
+                              factorial = factorial * (j+1);
+                         }                               
+                         resultado = resultado +    ((((-1)^ i)) /(factorial)) *((x^(2*i))) ;            
+                    }         
+                    print(contador +"--" + mensajes[contador-1]+x+") = " + resultado);
+                    show("Operacion # " + contador , contador +"--" + mensajes[contador-1]+x+") = " + resultado );                 
+               }
+               else
+               if(contador == 6)
+               {
+                    <-  6. arctan(x)
+                    |x| < 1
+                    ->
+                    x = parametros[contador -1 ];
+                    resultado = 0; >> Limpiamos el resultado        
+                    for(i = 0 ;i < numeroIteraciones; i++)
+                    {                            
+                         resultado = resultado +  ((((-1) ^ i))*(2*i+1)) *((x ^ (2*i+1)));
+                    }         
+                    print(contador +"--" + mensajes[contador-1]+x+") = " + resultado);
+                    show("Operacion # " + contador , contador +"--" + mensajes[contador-1]+x+") = " + resultado );                  
+               }
+               else
+               if(contador ==7)
+               {
+                    <-  7. sinh(x)
+                    |x| < 1
+                    ->
+                    x = parametros[contador -1 ];
+                    resultado = 0; >> Limpiamos el resultado        
+                    for(i = 0 ;i < numeroIteraciones; i++)
+                    {                            
+                         factorial = 1;
+                         repeat(2*i +1)
+                         {
+                              factorial = factorial * (j+1);
+                         }                            
+                         resultado = resultado +   (1/(factorial))* (x ^ (2*i+1)) ;
+                    }         
+                    print(contador +"--" + mensajes[contador-1]+x+") = " + resultado);
+                    show("Operacion # " + contador , contador +"--" + mensajes[contador-1]+x+") = " + resultado );                
+               }
+               else if(contador == 8)
+               {
+                    <-  8. cosh(x)       
+                    ->
+                    x = parametros[contador -1 ];
+                    resultado = 0; >> Limpiamos el resultado        
+                    for(i = 0 ;i < numeroIteraciones; i++)
+                    {                            
+                         factorial = 1;
+                         repeat(2*i)
+                         {
+                              factorial = factorial * (j+1);
+                         }                           
+                         resultado = resultado +   (1/(factorial))* (x ^ (2*i)) ;
+                    }                     
+                    print(contador +"--" + mensajes[contador-1]+x+") = " + resultado); 
+                    show("Operacion # " + contador , contador +"--" + mensajes[contador-1]+x+") = " + resultado );                
+               }
+          }  
+
+
+   }
+
+
+}

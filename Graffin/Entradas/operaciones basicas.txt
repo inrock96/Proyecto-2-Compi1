@@ -1,0 +1,95 @@
+clase principal{
+
+   main(){
+
+          int numero1 = (10 +20 *66-10)*40-2+3;        >> 52801
+          double numero2 = (10 +20 *66-10.5)/40-2+3;     >> 33.9875
+          String cadena = "El primer número es igual a 52801==" + numero1 + " y es segundo número es igual a 33.9975=="+numero2;
+          print(cadena);
+          print("Y la suma de ambas es igual a 52834.9875==" + (numero1 + numero2));
+          double numero3 = 'A'+10/10 + 2 -33+34*11*(10/22*2); >> 375
+          print("Numero3  375 == 375");  
+
+          double precioMochila1 = (33/10-3)/(9^2)/(100)+120+3-2*4-2*(2^2)+5*6;    >> 145.00027272727272
+          int precioMochila2 = 33  +3*2^2*2+100;                             >> 79.00   aqui vamos bien
+         double precioMochila3 = (precioMochila1 - precioMochila2) * (-10);  >> 200.00
+          double precioMochila4 = (precioMochila3)*1.25;                      >> 250.00
+          int factorial7  = 1*2*3*4*5*6*7; >> 2880
+          int factorial10 = factorial7*10; >> 28,800
+          bool comforcion1 = ( precioMochila1 > precioMochila2 ) || ( precioMochila1 > precioMochila3);    >> False
+          bool comforcion2 = ( precioMochila2 < precioMochila3 ) && ( precioMochila1< precioMochila4 );      >> True
+          bool comforcion3 = ((33/10-3)/(9^2)/(100)+120+3-2*4-2*(2^2)+5*6) > 137.00 && (127>=20 || false); >> True  fila21
+          String nMochila1 = "Converse All Star Black";   >> 1
+          String nMochila2 = "Toto lite";                 >> 2
+          String nMochila3 = "Adidas Predator";           >> 3
+          String nMochila4 = "Converse All Star Blue";    >> 4
+
+          print(">> 137.00 == " + precioMochila1 + " ---- " + nMochila1);
+          print(">> 157.00 == " + precioMochila2 + " ---- " + nMochila2);
+          print(">> 200.00 == " + precioMochila3 + " ---- " + nMochila3);
+          print(">> 250.00 == " + precioMochila4 + " ---- " + nMochila4);
+          print(">> Compracion1 == false == " + "false");
+          print(">> Compracion2 == True == " + "true");
+          print(">> Compracion3 == True == " + "true");
+
+          >> Primer comprobación
+          if(comforcion1 == false)
+          {
+               print("Primera comprobacion correcta.");
+          }                                                                                              >>fila39   
+          else                                                                                         >>fila40
+          {
+               print("Primera comprobacion inccorrecta.");
+          }
+
+          >> Segunda comprobación
+          if(comforcion2 == false)
+          {
+               print("Segunda comprobacion correcta.");
+          }                                                                                                >>fila50    
+          else
+          {
+               print("Segunda omprobacion inccorrecta.");
+          }
+
+          >> Tercer comprobación
+          if(comforcion3 == false)
+          {
+               print("Tercera comprobacion correcta.");
+          }    
+          else
+          {
+               print("Tercera comprobacion inccorrecta.");
+          }
+          
+          int valor = 10 + true; >> Primer error de tipos.
+          string valor2 = 10 + "segundo error"; >> Segundo error de tipos.
+          string valor3 = "Tercer error" + 'A'; >> Tercer error de tipos.
+          string valor4 = "Curto " + "error";   >> Cuarto error de tipos        fila70
+          int valor5 = 100 / true;               >> Quinto error de tipos.
+
+          print("75 == " +(100 + 'A')); >> 75
+          print("108==" + (100 / 'b')); >> 108
+          print("260==" +('a'+ 'A' + 'b')); >> 260
+
+          int array vector[9] = {1,2,3,4,5,6,7,8,9};
+          int cont = 0;
+          int total = 0;
+          for(cont = 0; cont< 9 ; cont++)
+          {
+               total = total + vector[cont];
+              
+          }
+          print("45=="+total);
+          total = 1;
+          for(cont = 0; cont< 9 ; cont++)
+          {
+               total = total * vector[cont];
+          }
+          print("362880== "+total); 
+           
+   }
+
+}
+
+

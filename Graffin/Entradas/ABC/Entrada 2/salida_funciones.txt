@@ -1,0 +1,29 @@
+// Salida de fibonacci
+
+Resultado de fibonacci(20) = 6765
+//11 = 89
+//10 = 55
+
+//Salida torres de Hanoi
+
+mover disco de 1 a 2
+mover disco de 1 a 3
+mover disco de 2 a 3
+mover disco de 1 a 2
+mover disco de 3 a 1
+mover disco de 3 a 2
+mover disco de 1 a 2
+mover disco de 1 a 3
+mover disco de 2 a 3
+mover disco de 2 a 1
+mover disco de 3 a 1
+mover disco de 2 a 3
+mover disco de 1 a 2
+mover disco de 1 a 3
+mover disco de 2 a 3
+
+
+//Salida ParoImpar
+
+El número '15' es Impar
+El número '20' es Par
